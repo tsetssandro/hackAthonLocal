@@ -1,0 +1,105 @@
+body
+{
+}
+
+.backround
+ {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.797);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+ }
+
+
+.content
+{
+    display: none;
+    z-index: 1000;
+    padding: 100px 300px;
+    background-color: black;
+    border-radius: 10px;
+    
+}
+
+.mySwiper2
+{
+    overflow: hidden;
+}
+
+
+.backround-display
+{
+    justify-content: center;
+    align-items: center;
+}
+
+.content-display
+{
+    display: block;
+}
+
+#content-close3
+{
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+html,body
+body 
+{
+    position: relative;
+    height: 100%;
+}
+
+
+
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        height: 10px;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+
+      .slider {
+        margin-top: 100px;
+        width: 80%;
+        border-radius: 30px;
+        background-color: rgba(0, 0, 0, 0.39);;
+      }
+    
+      .swiper-slide img
+      {
+          width: 100%;
+      }
+
+
+
+      .swiper {
+        margin-top: 100px;
+        height: 50%;
+        width: 80%;
+        border-radius: 30px;
+        background-color: rgba(0, 0, 0, 0.39);
+      }
+      
+
+

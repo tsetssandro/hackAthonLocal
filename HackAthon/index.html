@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- Demo styles -->
+    <style>
+
+.moviebackround
+      {
+        height: 750px;
+        width: 1000px;
+        background-color: black;
+        border-radius: 30px;
+        padding: auto;
+      }
+
+
+         .backround
+     {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.797);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    display: none;
+ }
+
+.content
+{
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 1000;
+    background-color: black;
+    border-radius: 10px;
+
+}
+
+.content .links
+{
+    height: 419px;
+    width: 50%;
+
+}
+
+
+.backround-display
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-display
+{
+    display: flex;
+}
+
+#content-close
+{
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+      html,
+      body {
+        position: relative;
+        height: 100%;
+        overflow-x: hidden;
+        background-color: rgb(34, 40, 49);
+
+      }
+
+      body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 90%;
+        height: 80%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 50px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .slider2 img
+      {
+        border-radius: 30px;
+      }
+
+
+      .video
+    {
+        padding-left: 50px;
+    }
+
+    .links 
+    {
+        height: 300px;
+        width: 300px;
+        background-color: #fff;
+    }
+    </style>
+  </head>
+
+  <body>
+
+
+    <nav>
+        <ul class="logo1">
+            <li class="logo"><button class="XMOVIES"><img src="./red_logo__-removebg-preview.png" class="nav_image"><span>MOVIES</span></button></li>
+        </ul>
+      <div>
+        <ul class="items">
+            <li>
+                    <button class="dropdownbutton btn"type="button" aria-haspopup="true" aria-expanded="true" aria-controls="dropdown1" >
+                      Genres<span class="arrow"></span>   
+                    </button>
+                <!-- <ul class="dropdown" id="dropdown1">
+                  <li><a href="/index.html" ><button class="btn"> Action </button></a></li>
+                  <li><a href="/index.html" ><button class="btn"> Detective </button></a></li>
+                  <li><a href="/index.html" ><button class="btn"> Horror </button></a></li>
+                  <li><a href="/index.html" ><button class="btn"> adventure </button></a></li>
+                  <li><a href="/index.html" ><button class="btn"> Comedy </button></a></li>
+                  <li><a href="/index.html" ><button class="btn"> Romance </button></a></li>
+                  <li><a href="/index.html" ><button class="btn"> Fantasy </button></a></li>
+                </ul> -->
+                    </li>
+                          <li class="# 2"><button class="btn"> Realese Date</button></li>
+                          <li class="# 3"><button class="btn">IMBD Rating</button></li>
+                          <li class="# 3"><button class="btn">Country</button></li>
+                    <li>
+    
+                    <div class="searchBox">
+    
+                    <input class="searchInput"type="text" name="" placeholder="Search">
+    
+                    <button class="searchButton" href="#">
+    
+                      <i class="material-icons">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                      </i>
+    
+                    </button>
+                  <script src="./app.js"></script>
+                  </div>
+                </li>
+              </li>
+            </ul>
+          </ul>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="slider">
+        <div class="swiper FlashSwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="./Flash Banner.jfif" alt=""></div>
+              <div class="swiper-slide"><img src="./black addam.jfif" alt=""></div>
+              <div class="swiper-slide"><img src="./wednesday.jpg" alt=""></div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+          </div>
+    </section>
+
+      <div class="mySwiper2 slider2">
+        <div class="swiper-wrapper">
+            
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+          <div class="backround">
+            <div class="moviebackround">
+
+            </div>
+          </div>
+      </div>
+
+    <!-- Swiper JS -->
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+      });
+
+      var swiper3 = new Swiper(".FlashSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+
+
+    </script>
+  </body>
+</html>
